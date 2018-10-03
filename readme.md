@@ -8,14 +8,27 @@
 
 Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
-## Official Documentation
+## Serv
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+php -S localhost:8000 -t public
 
-## Security Vulnerabilities
+## commands 
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+php artisan make:migration create_users_table --create=users
+php artisan migrate
 
-## License
+## Activar Eloquent
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+/bootstrap/app.app
+
+descomentar las linea:
+
+//$app->withFacades();
+//$app->withEloquent();
+
+// $app->routeMiddleware([
+//     'auth' => App\Http\Middleware\Authenticate::class,
+// ]);
+
+// $app->register(App\Providers\AuthServiceProvider::class);
